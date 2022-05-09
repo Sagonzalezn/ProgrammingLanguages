@@ -353,7 +353,6 @@ class Lexer:
                 self.line +=1
                 self.line_count += 1
             posible_comment += self.current_char
-            print(self.current_char)
             self.advance()
 
         if self.current_char == '*' and self.next_char == '/':
